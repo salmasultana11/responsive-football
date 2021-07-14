@@ -237,3 +237,21 @@ footer p{
     text-align: center;
 }
 /* footer section end */
+
+/* mobile responsive  */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    #top-section .container,  #highlights .container, #article .container, #exclusives .container, #t-shirt .container {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin: 50px;
+    }
+    article, .photo-frame{
+        flex-direction: column;
+    }
+}
